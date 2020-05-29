@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="content">
+    <div id="navbar">
+      <nav class="navbar fixed-top navbar-light bg-dark">
+        <a class="navbar-brand" href="#" style="color: white;">To-Do List</a>
+      </nav>
+    </div>
+    <div id="sidebar">
+      <div class="wrapper">
+        <nav id="sidebar">
+          <div class="sidebar-header">
+            <h3>My Projects</h3>
+          </div>
+          <ul class="list-unstyled components">
+
+            <form id="projField"> 
+              <div class="form-group">
+
+                <input class="form-control" id='projNameField' placeholder="Enter project name">
+              </div>
+              <input type='submit' value='New Project' id="newProjectButton" class="btn btn-light">
+              </input>
+            </form>
+            <p id='noNewProj'></p>
+            <div id='projects'>
+            </div>
+          </ul>
+        </nav>
+        <div id="toDoList">
+          <form>
+            <div class="form-row">
+              <div class="form-group" id='formG'>
+                <input class="form-control" id='title' placeholder="Title">
+                <input class="form-control" id='dueDate' placeholder="Due Date">
+              </div>
+              <div class="form-group" id="formG">
+                <input class="form-control" id='description' placeholder="Description">
+                <input type='submit' value='New To-Do' id="newToDo" class="btn btn-primary">
+
+            </input>
+              </div>
+            </div>
+          </form>
+          <table class='table'>
+            <thead class='thead-dark'>
+              <tr id="toDoHeader">
+                <th>Title</th>
+                <th>Description</th>
+                <th>Due Date</th>
+                <th>Priority</th>
+                <th>Remove</th>
+              </tr>
+          </table>
+          <p id="blankMessage"></p>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"
+      integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>

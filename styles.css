@@ -1,0 +1,162 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  
+  #sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    flex: 1;
+    background: #79a1e8;
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  #sidebar:hover #projField {
+    width: 250px;
+  }
+  
+  #projField {
+    /* overflow-x: hidden; */
+    width: 20px;
+    transition: .5s;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background: #fafafa;
+  }
+  
+  p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+  }
+  
+  .navbar {
+    -webkit-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  #sidebar .sidebar-header {
+    margin-top: 55.6px;
+    padding: 20px;
+    background: #6b90cf;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+  }
+  
+  #sidebar ul.components {
+    padding: 20px 0;
+  }
+  
+  #sidebar ul p {
+    color: #fff;
+    padding: 10px;
+  }
+  
+  #sidebar ul li a {
+    
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 1.1em;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    color: rgb(255, 255, 255);
+  }
+  #sidebar ul li a:hover {
+    color: black;
+    background: #fff;
+  }
+  
+  #newProjectButton {
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  #toDoList {
+    height: fit-content;
+    width: auto;
+    position: absolute;
+    color: black;
+    background-color: white;
+    padding: 1em;
+    margin-top: 137.2px;
+    left: 331.6px;
+    right: 81.6px;
+    -webkit-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  #toDoForm {
+  }
+  
+  #home-dropdown-toggle {
+    margin-top: 20px;
+  }
+  
+  #content {
+    background-color: rgb(236, 236, 236);
+  }
+  
+  #newToDoButton {
+    display: flex;
+    margin-bottom: 1em;
+    
+  }
+  .form-control {
+    margin-right: 20px;
+  }
+  
+  #toDoForm {
+    margin-left: 0;
+  }
+  
+  input {
+  }
+  
+  #formG {
+    display: flex;
+  }
+  
+  #projNameField {
+    width: 210px;
+    margin-left: 20px;
+  }
+  
+  #newToDo {
+    margin-bottom: 20px;
+  }
+  
+  #description {
+    margin-bottom: 20px;
+  }
+  
+  #title {
+    margin-bottom: 20px;
+  }
+  
+  .form-row {
+    margin-left: 0;
+  }
+  
+  .form-group {
+    margin-bottom: 0;
+  }
+  
+  #blankMessage {
+  margin: 1em;
+  text-align: center;
+  }
+  
